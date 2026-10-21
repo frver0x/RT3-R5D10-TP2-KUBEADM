@@ -3,6 +3,9 @@
 *.pem
 *.conf
 *.db
+*.sqlite
+*.pycache
 *.tar.gz
 pki/
 backup/
+secrets/
