@@ -1,0 +1,19 @@
+toolbox:
+  enabled: true
+cephFileSystems: []
+cephObjectStores: []
+cephClusterSpec:
+  storage:
+    useAllNodes: true
+    useAllDevices: false
+    deviceFilter: "^nvme0n1$"
+  resources:
+    osd:
+      requests: { cpu: "250m", memory: "1Gi" }
+      limits:   { memory: "2Gi" }
+    mon:
+      requests: { cpu: "100m", memory: "256Mi" }
+      limits:   { memory: "1Gi" }
+    mgr:
+      requests: { cpu: "100m", memory: "256Mi" }
+      limits:   { memory: "1Gi" }
