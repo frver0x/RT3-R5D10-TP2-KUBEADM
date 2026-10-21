@@ -1,0 +1,8 @@
+*.key
+*.crt
+*.pem
+*.conf
+*.db
+*.tar.gz
+pki/
+backup/
